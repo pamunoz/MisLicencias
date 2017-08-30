@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.pfariasmunoz.mislicencias.EditorActivity"
+    tools:showIn="@layout/activity_editor">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ti_licence_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/et_licence_number"
+        android:layout_alignParentTop="true">
+
+        <EditText
+            android:id="@+id/et_licence_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:imeOptions="actionDone"
+            android:inputType="number"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <!-- Number Picker -->
+
+    <NumberPicker
+        android:id="@+id/np_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_licence_duration"/>
+
+
+
+    <TextView
+        android:id="@+id/tv_licence_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ti_licence_number"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/tv_licence_duration"/>
+
+    <!-- Dates inputs -->
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ti_start_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/start_date_label"
+        android:layout_below="@+id/ti_licence_number"
+        android:layout_toLeftOf="@+id/np_duration"
+        android:layout_toStartOf="@+id/np_duration"
+        >
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_start_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:imeOptions="actionNone"
+            android:inputType="none"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ti_end_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:hint="@string/end_date_label"
+        android:layout_toStartOf="@+id/np_duration"
+        android:layout_toLeftOf="@+id/np_duration"
+        android:layout_below="@+id/ti_start_date">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_end_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+
+            android:imeOptions="actionNone"
+            android:inputType="none"/>
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:id="@+id/bt_save_licence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_save_licence"
+        android:background="#00ab00"
+        android:textColor="#fff"
+        android:layout_below="@+id/ti_end_date"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+    <Button
+        android:id="@+id/bt_delete_licence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Delete"
+        android:textColor="#fff"
+        android:background="#ff1b0f"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

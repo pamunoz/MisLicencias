@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mis Licencias</string>
+    <string name="bt_save_licence">Guardar</string>
+    <string name="discard">descartar</string>
+    <string name="duration_label">Duración</string>
+    <string name="editor_activity_title_edit_licence">Editar licencia</string>
+    <string name="editor_activity_title_new_licence">Agregue una licencia</string>
+    <string name="editor_insert_licence_failed">Hubo un error al agregar la licencia :(</string>
+    <string name="editor_insert_licence_successful">Agregó la licencia con exito :)</string>
+    <string name="editor_update_licence_failed">Fallo la actualización :(</string>
+    <string name="editor_update_licence_successful">Actualización con exito :)</string>
+    <string name="end_date_label">" Termino"</string>
+    <string name="et_licence_number">Numero de Licencia</string>
+    <string name="from_date">Inicio</string>
+    <string name="keep_editing">Continue con la edición</string>
+    <string name="licence_number_label">Numero de licencia:</string>
+    <string name="licence_paid">Pagada</string>
+    <string name="licence_state_label">Estado</string>
+    <string name="licence_unpaid">No Pagada</string>
+    <string name="start_date_label">Inicio</string>
+    <string name="string.unsaved_changes_dialog_msg">Licencia no guardada</string>
+    <string name="tv_licence_duration">Duración</string>
+</resources>

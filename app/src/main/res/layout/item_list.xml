@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:padding="16dp"
+              android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/licence_number_label"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/licence_state_label"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/licence_number"
+            android:gravity="center_horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@style/bigText"
+            android:layout_height="wrap_content"
+            tools:text="what"/>
+
+        <TextView
+            android:id="@+id/licence_is_paid"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            style="@style/bigText"
+            android:layout_height="wrap_content"
+            tools:text="acepted"/>
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/licence_start_label"
+            android:layout_width="0dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/start_date_label"/>
+        <TextView
+            android:id="@+id/licence_duration_label"
+            android:layout_width="0dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/duration_label"/>
+        <TextView
+            android:id="@+id/licence_end_label"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/end_date_label"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/licence_start"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@style/normalText"
+            android:layout_height="wrap_content"
+            tools:text="12/12/17"/>
+        <TextView
+            android:id="@+id/licence_duration"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textColor="@color/colorAccent"
+            android:layout_height="wrap_content"
+            tools:text="30"/>
+        <TextView
+            android:id="@+id/licence_end"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@style/normalText"
+            android:layout_height="wrap_content"
+            tools:text="01/01/18"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Mis Licencias</string>
+    <string name="title_activity_editor" translatable="false">EditorActivity</string>
+
+    <string name="from_date">From Date</string>
+    <string name="to_date" translatable="false">To Date</string>
+    <string name="bt_save_licence">Save</string>
+    <string name="tv_licence_duration">Duration</string>
+    <string name="et_licence_number">Licence Number</string>
+
+    <string name="editor_activity_title_new_licence">Add a licence</string>
+    <string name="editor_activity_title_edit_licence">Edit licence</string>
+
+    <string name="editor_insert_licence_failed">Insertion of new licence failed \:\(</string>
+    <string name="editor_insert_licence_successful">Insertion was successful \:\)</string>
+    <string name="editor_update_licence_failed">Update failed :(</string>
+    <string name="editor_update_licence_successful">Update was successful \:\)</string>
+    <string name="string.unsaved_changes_dialog_msg">Don\'t save licence</string>
+    <string name="discard">discard</string>
+    <string name="keep_editing">Keep Editing</string>
+    <string name="end_date_label">End date</string>
+    <string name="duration_label">Duration</string>
+    <string name="start_date_label">Start Date</string>
+    <string name="licence_number_label">Licence Number:</string>
+    <string name="licence_state_label">State</string>
+    <string name="licence_paid">Paid</string>
+    <string name="licence_unpaid">Unpaid</string>
+
+</resources>
